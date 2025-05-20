@@ -1,0 +1,99 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Fama Barber Shop and Beauty Salon</title>
+    <script src="https://cdn.tailwindcss.com"></script>
+    <style>
+        body {
+            font-family: 'Arial', sans-serif;
+        }
+        .smooth-scroll {
+            scroll-behavior: smooth;
+        }
+    </style>
+</head>
+<body class="bg-gray-100 smooth-scroll">
+    <!-- Hero Section -->
+    <header class="bg-cover bg-center h-screen" style="background-image: url('https://images.unsplash.com/photo-1595670762343-7c805dd6f144?ixlib=rb-4.0.3&auto=format&fit=crop&w=1350&q=80')">
+        <nav class="bg-black bg-opacity-50 p-4">
+            <div class="container mx-auto flex justify-between items-center">
+                <h1 class="text-white text-2xl font-bold">Fama Barber Shop</h1>
+                <ul class="flex space-x-6">
+                    <li><a href="#home" class="text-white hover:text-yellow-400">Home</a></li>
+                    <li><a href="#services" class="text-white hover:text-yellow-400">Services</a></li>
+                    <li><a href="#about" class="text-white hover:text-yellow-400">About</a></li>
+                    <li><a href="#contact" class="text-white hover:text-yellow-400">Contact</a></li>
+                </ul>
+            </div>
+        </nav>
+        <div class="container mx-auto h-full flex flex-col justify-center items-center text-center text-white">
+            <h2 class="text-4xl md:text-6xl font-bold mb-4">Fama Barber Shop & Beauty Salon</h2>
+            <p class="text-xl mb-4">4.6 ★★★★★ (116+ Reviews)</p>
+            <p class="text-lg mb-6">Premium Grooming in Denton, TX</p>
+            <a href="#contact" class="bg-yellow-400 text-black px-6 py-3 rounded-full font-semibold hover:bg-yellow-500">Book Now</a>
+        </div>
+    </header>
+
+    <!-- Services Section -->
+    <section id="services" class="py-16 bg-white">
+        <div class="container mx-auto text-center">
+            <h2 class="text-3xl font-bold mb-8">Our Services</h2>
+            <div class="grid grid-cols-1 md:grid-cols-3 gap-8">
+                <div class="p-6 bg-gray-100 rounded-lg">
+                    <h3 class="text-xl font-semibold mb-2">Classic Haircuts</h3>
+                    <p>Precision cuts tailored to your style.</p>
+                </div>
+                <div class="p-6 bg-gray-100 rounded-lg">
+                    <h3 class="text-xl font-semibold mb-2">Beard Trims</h3>
+                    <p>Expert grooming for a sharp look.</p>
+                </div>
+                <div class="p-6 bg-gray-100 rounded-lg">
+                    <h3 class="text-xl font-semibold mb-2">Hot Towel Shaves</h3>
+                    <p>Relaxing, traditional shaves.</p>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- About Section -->
+    <section id="about" class="py-16 bg-gray-200">
+        <div class="container mx-auto text-center">
+            <h2 class="text-3xl font-bold mb-8">About Us</h2>
+            <p class="text-lg max-w-2xl mx-auto">Fama Barber Shop and Beauty Salon brings over 5 years of expertise in men's and women's grooming. Located in the heart of Denton, TX, we offer a premium experience with a focus on quality and style.</p>
+            <p class="text-md mt-4 italic">"Costly compared to other barbershops with better haircuts."</p>
+        </div>
+    </section>
+
+    <!-- Contact Section -->
+    <section id="contact" class="py-16 bg-white">
+        <div class="container mx-auto text-center">
+            <h2 class="text-3xl font-bold mb-8">Contact Us</h2>
+            <p class="text-lg mb-4"><strong>Location:</strong> 500 N Bell Ave #109, Denton, TX 76209, United States</p>
+            <p class="text-lg mb-4"><strong>Phone:</strong> <a href="tel:+19406129127" class="text-blue-600 hover:underline">+1 940-612-9127</a></p>
+            <p class="text-lg mb-4"><strong>Hours:</strong> Open ⋅ Closes 7 PM</p>
+            <p class="text-lg mb-4"><strong>Directions:</strong> <a href="https://maps.google.com/?q=500+N+Bell+Ave+%23109,+Denton,+TX+76209" target="_blank" class="text-blue-600 hover:underline">View on Google Maps</a></p>
+        </div>
+    </section>
+
+    <!-- Footer -->
+    <footer class="bg-black text-white py-4">
+        <div class="container mx-auto text-center">
+            <p>&copy; 2025 Fama Barber Shop and Beauty Salon. All rights reserved.</p>
+        </div>
+    </footer>
+
+    <script>
+        // Smooth scroll for navigation
+        document.querySelectorAll('a[href^="#"]').forEach(anchor => {
+            anchor.addEventListener('click', function (e) {
+                e.preventDefault();
+                document.querySelector(this.getAttribute('href')).scrollIntoView({
+                    behavior: 'smooth'
+                });
+            });
+        });
+    </script>
+</body>
+</html>
